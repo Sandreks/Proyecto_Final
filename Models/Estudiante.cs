@@ -25,23 +25,20 @@ namespace WebApplication5.Models
         public string NumeroTelefono { get; set; }
 
         [StringLength(100)]
+        [RegularExpression("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ")]
         [Display(Name = "Dirección")]
         public string Direccion { get; set; }
 
         [Display(Name = "Género")]
+        [RegularExpression("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ")]
         public string Genero { get; set; }
 
         [Display(Name = "Nacionalidad")]
+        [RegularExpression("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ")]
         public string Nacionalidad { get; set; }
 
         [Display(Name = "Carrera")]
+        [RegularExpression("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ")]
         public string Carrera { get; set; }
-
-
-
-        public List<Calificacion> Calificaciones { get; set; }
     }
-
- 
-
 }

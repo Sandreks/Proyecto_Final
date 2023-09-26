@@ -33,11 +33,10 @@ namespace WebApplication5.Models
             [DataType(DataType.Date)]
             [Display(Name = "Fecha de Registro")]
             public DateTime FechaRegistro { get; set; }
-
+            [RegularExpression("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ")]
             [Display(Name = "Observaciones")]
             public string Observaciones { get; set; }
 
-            // Otras propiedades de la calificación
         }
 
     }
